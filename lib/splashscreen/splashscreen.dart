@@ -5,7 +5,6 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:pasanglagi/loginpage/login_user.dart';
 
 class Splashscreen extends StatefulWidget {
-
   _Splashscreen createState() => _Splashscreen();
 }
 
@@ -27,13 +26,13 @@ class _Splashscreen extends State<Splashscreen> {
 
   @override
   Widget build(BuildContext context) {
-    return
-      SafeArea(
-        child: Scaffold(
+    return SafeArea(
+      child: Scaffold(
           body: Center(
-            child: Image(image: AssetImage('assets/logo/pasanglagi.png'),),
-          )
+        child: Image(
+          image: AssetImage('assets/logo/pasanglagi.png'),
         ),
-      );
+      )),
+    );
   }
 }
