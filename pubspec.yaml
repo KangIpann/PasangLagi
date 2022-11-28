@@ -54,7 +54,8 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 flutter_native_splash:
   color: "#FFFFFF"
-  image: assets/logo/pasanglagi.png
+  image: assets/logo/splash_icon.png
+
 
 # The following section is specific to Flutter packages.
 flutter:
