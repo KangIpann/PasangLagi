@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 
 void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
@@ -23,6 +24,22 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Image.asset('assets/logo/pasanglagi.png'),
+        ),
+        bottomNavigationBar: Container(
+          decoration: BoxDecoration(
+            color: Colors.white70,
+            border: Border.all(color: Colors.black)
+          ),
+          margin: EdgeInsets.only(bottom: 38),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              GestureDetector(child: Image(image: AssetImage('assets/logo/navbar/beranda.png'))),
+              GestureDetector(child: Image(image: AssetImage('assets/logo/navbar/menu.png'))),
+              GestureDetector(child: Image(image: AssetImage('assets/logo/navbar/projek.png'))),
+              GestureDetector(child: Image(image: AssetImage('assets/logo/navbar/pesan.png'))),
+            ],
+          ),
         ),
       ),
     );
