@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:pasanglagi/pages/home/home_screen.dart';
 
 void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
@@ -17,14 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     FlutterNativeSplash.remove();
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter Demo Home Page'),
-        ),
-        body: Center(
-          child: Image.asset('assets/logo/pasanglagi.png'),
-        ),
-      ),
+      home: HomeScreen(),
     );
   }
 }
