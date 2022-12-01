@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:pasanglagi/pages/auth/login_screen.dart';
 import 'package:pasanglagi/pages/auth/welcome_screen.dart';
+import 'package:pasanglagi/pages/beranda_page.dart';
 import 'package:pasanglagi/pages/home/home_screen.dart';
 
 import 'data/local/session/user_session.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         future: UserSessions.getSessions(),
         builder: (context, snapshot) { //check if there's session saved or not
           if (snapshot.hasData) {
-            return HomeScreen();
+            return Beranda();
           } else {
             return WelcomeScreen();
           }

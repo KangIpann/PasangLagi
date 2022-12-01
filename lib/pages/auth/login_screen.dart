@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:form_validator/form_validator.dart';
+import 'package:pasanglagi/pages/auth/register_screen.dart';
+import 'package:pasanglagi/pages/beranda_page.dart';
 
 import '../../data/local/session/user_session.dart';
 import '../../data/model/user.dart';
@@ -26,6 +28,11 @@ class _LoginScreenState extends State<LoginScreen> {
       User user  = User(email: emailController.text, password: passwordController.text);
       UserSessions.saveSessions(user);
       debugPrint('Form is valid');
+      Navigator.pop(context);
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const Beranda()),
+      );
     }
   }
 
@@ -156,12 +163,12 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                             onPressed: () {
-                              //signup screen
-                              // Navigator.pop(context);
-                              // Navigator.push(
-                              //     context,
-                              //     MaterialPageRoute(
-                              //         builder: (context) => const SigninPage()));
+                              // signup screen
+                              Navigator.pop(context);
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => RegisterScreen()));
                             },
                           )
                         ],
