@@ -1,14 +1,14 @@
 
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class PesanScreen extends StatelessWidget {
+  const PesanScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: const Center(
-        child: Text('Home'),
+        child: Text('Pesan'),
       ),
     );
   }
