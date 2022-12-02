@@ -5,6 +5,7 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:pasanglagi/common/my_colors.dart';
 import 'package:pasanglagi/common/widgets/bottom_navbar.dart';
 import 'package:pasanglagi/pages/home/home_screen.dart';
+import 'package:pasanglagi/pages/home/menu/menu_screen.dart';
 import 'package:pasanglagi/pages/menu_page.dart';
 import 'package:pasanglagi/pages/pesan_page.dart';
 import 'package:pasanglagi/pages/project_page.dart';
@@ -23,6 +24,7 @@ class _BerandaState extends State<Beranda> {
   int _currentIndex = 0;
   final List<Widget> _widgetOptions = [
     const HomeScreen(),
+    const MenuScreen(),
     const PesanScreen(),
     const ProjectScreen(),
   ];
@@ -48,6 +50,13 @@ class _BerandaState extends State<Beranda> {
           BottomNavigationBarItem(
             icon: ImageIcon(
               const AssetImage("assets/logo/navbar/beranda_click.png"),
+              color: _currentIndex == 0 ? MyColors.main : Colors.grey,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: ImageIcon(
+              const AssetImage("assets/logo/navbar/menu.png"),
               color: _currentIndex == 0 ? MyColors.main : Colors.grey,
             ),
             label: '',

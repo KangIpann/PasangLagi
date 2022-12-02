@@ -73,6 +73,7 @@ flutter:
       - assets/logo/
       - assets/logo/navbar/
       - assets/logo/fitur/
+      - assets/logo/asset/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

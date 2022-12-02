@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     FlutterNativeSplash.remove();
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: FutureBuilder<User?>(
         future: UserSessions.getSessions(),
         builder: (context, snapshot) { //check if there's session saved or not
