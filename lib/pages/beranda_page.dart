@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:pasanglagi/common/my_colors.dart';
 import 'package:pasanglagi/common/widgets/bottom_navbar.dart';
 import 'package:pasanglagi/pages/home/home_screen.dart';
 import 'package:pasanglagi/pages/menu_page.dart';
@@ -43,18 +44,27 @@ class _BerandaState extends State<Beranda> {
             _currentIndex = value;
           });
         },
-        items: const [
+        items:  [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Beranda',
+            icon: ImageIcon(
+              const AssetImage("assets/logo/navbar/beranda_click.png"),
+              color: _currentIndex == 0 ? MyColors.main : Colors.grey,
+            ),
+            label: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.message),
-            label: 'Pesan',
+            icon: ImageIcon(
+              const AssetImage("assets/logo/navbar/pesan.png"),
+              color: _currentIndex == 0 ? MyColors.main : Colors.grey,
+            ),
+            label: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.category),
-            label: 'Projek',
+            icon: ImageIcon(
+              const AssetImage("assets/logo/navbar/projek.png"),
+              color: _currentIndex == 0 ? MyColors.main : Colors.grey,
+            ),
+            label: '',
           ),
         ],
       ),

@@ -6,4 +6,5 @@ class MyColors {
   static Color yellow     = Color(0xFFF2BA30);
   static Color softGrey   = Color(0xFFE9E9E9);
   static Color white      = Color(0xFFFFFFFF);
+  static Color main      = Color(0xFFB3674F);
 }
