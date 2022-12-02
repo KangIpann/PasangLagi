@@ -8,8 +8,8 @@ import 'package:pasanglagi/pages/menu_page.dart';
 import 'package:pasanglagi/pages/pesan_page.dart';
 import 'package:pasanglagi/pages/project_page.dart';
 
-import 'home/pesan_screen.dart';
-import 'home/project_screen.dart';
+import 'pesan/pesan_screen.dart';
+import 'project/project_screen.dart';
 class Beranda extends StatefulWidget {
   const Beranda({Key? key}) : super(key: key);
 

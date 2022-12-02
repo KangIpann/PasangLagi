@@ -39,6 +39,7 @@ dependencies:
   shared_preferences: ^2.0.15
   form_validator: ^1.0.4
   google_nav_bar: ^5.0.6
+  carousel_slider: ^4.1.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -68,8 +69,10 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
       - assets/
+      - assets/carousel/
       - assets/logo/
       - assets/logo/navbar/
+      - assets/logo/fitur/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
