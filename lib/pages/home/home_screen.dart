@@ -77,7 +77,7 @@ class HomeScreen extends StatelessWidget {
             ),
              Container(
                padding: const EdgeInsets.all(16),
-               height:250,
+               height: 200,
                child: DaftarFitur(),
              )
              //DaftarFitur(),

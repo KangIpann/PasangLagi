@@ -12,8 +12,6 @@ class DaftarFitur extends StatelessWidget {
       children: [
         fiturItem(imagePath: 'assets/logo/fitur/aio.png',),
         fiturItem(imagePath: 'assets/logo/fitur/arsitek.png',),
-        fiturItem(imagePath: 'assets/logo/fitur/kalkulasi.png',),
-        fiturItem(imagePath: 'assets/logo/fitur/material.png',),
         fiturItem(imagePath: 'assets/logo/fitur/konstruksi.png',),
         fiturItem(imagePath: 'assets/logo/fitur/konsul.png',),
       ],
